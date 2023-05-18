@@ -1,0 +1,52 @@
+* {
+
+    color: yellow
+}
+
+
+
+h1 {
+    color: blue;
+}
+
+p {
+    size: 17px;
+}
+
+
+
+
+.clase1 {
+    color: black;
+}
+
+
+
+
+#idtitutlogrande {
+    color: green;
+}
+
+
+
+
+a[href] {
+    color: brown;
+
+}
+
+a[href*=".ec"] {
+    color: red;
+
+}
+
+
+
+
+/*
+label:hover{
+    color: hotpink;
+    background-color: blue;
+    font-size: 50px;
+}
+*/
