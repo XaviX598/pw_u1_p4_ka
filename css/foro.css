@@ -1,0 +1,109 @@
+/* */
+/*para combinar dos tipos de selectores en este caso seria tipo clase y tipo elemento (tambien llamado selector anidado)*/
+/*display es para indicar como quiero que se muestre si en linea o debajo del otro, el block es para que se muestre en bloque*/
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/display  para ver los estilos en display*/
+/* para que el borde se haga visible es border, en este caso borde solido de color negro*/
+/* para ponerle un margen margin */
+/* para que solo se ponga margen a los lados margin-(variaciones), en este caso right*/
+.menu li {
+    list-style: none;
+    display: inline-block;
+    /*si antes del solida va una unidad se aumenda el grosor del borde
+    para los bordes tambien existen 20 tipos de bordes
+    Link: https://www.w3schools.com/css/css_border.asp 
+    */
+    border: 3px dashed black;
+    /*margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 60px;*/
+    /* se puede poner hasta un total de 4 distancias  margin: 10px 20px 30px 50px;*/
+    /*primero arriba, segundo derecha, tercero abajo, cuarto arriba*/
+    /* si es de 2 el primero arriba y abajo y el segundo, izquierda y derecha*/
+    /*margin: 10px 20px 30px 50px;*/
+    margin: 5px;
+
+    padding: 5px;
+    border-radius: 5px;
+
+    /*existen tipos de estilo que por mas que existen al declararse, no se aplican como el siguiente
+    por eso nacieron los frameworks que permiten agilizar el desarrollo */
+    text-align: center;
+
+}
+
+.cabecera h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: coral;
+
+}
+
+.menu {
+    background-color: blanchedalmond;
+    text-align: left;
+}
+
+/*si queremos agrupar tipos de selector que tiene un estilo en comun por ejemplo esto, se pone la coma
+h1 {
+    color: red;
+}
+h2 {
+    color: red;
+}
+h3 {
+    color: red;
+}
+
+
+
+h1,h2,h3 {
+    color: red;
+}
+*/
+/*
+SIEMPRE A LAS ESTRUCTURAS PRINCIPALES DEBEMOS DECIRLES EL DISPLAY ESTAS SON
+*/
+
+header,
+section,
+footer,
+aside,
+nav,
+article {
+    display: block;
+}
+
+/*
+para centrar toda la estructura
+*/
+
+body {
+    text-align: center;
+    background-color: rgba(211, 151, 231, 0.822);
+}
+
+/*todo elemento que tenga una imagen o algo multimedia va el link o un path si esta el recurso local*/
+
+.formulario {
+    width: 900px;
+    border: 1px double black;
+    /*para que se haga automaticamente*/
+    margin: 15px auto;
+}
+
+.section {
+    margin: 20px;
+    width: 600px;
+    /*el estilo float estamos diciendo que a todos los elemento con ese estilo van a quedar flotando y no se tomaran en cuenta en la pagina*/
+    float: left;
+}
+
+article {
+    border: 1px solid black;
+    padding: 20px;
+    /*margin hacia abajo*/
+    margin-bottom: 25px;
+    background-color: cadetblue;
+}
