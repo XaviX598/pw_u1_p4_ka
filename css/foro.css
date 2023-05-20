@@ -96,7 +96,8 @@ body {
 .section {
     margin: 20px;
     width: 600px;
-    /*el estilo float estamos diciendo que a todos los elemento con ese estilo van a quedar flotando y no se tomaran en cuenta en la pagina*/
+    /*el estilo float estamos diciendo que a todos los elemento con ese estilo van a quedar flotando y no se tomaran 
+    en cuenta en la pagina*/
     float: left;
 }
 
@@ -106,4 +107,30 @@ article {
     /*margin hacia abajo*/
     margin-bottom: 25px;
     background-color: cadetblue;
+}
+
+.referencias {
+    border: 1px solid black;
+    /*ancho*/
+    width: 200px;
+    /*para decirle a que lugar se oriente aqui se pone a la derecha porque se orienta de los elementos que tiene a la izquierda 
+    que este es el left que pusimos, entonces todos esos elementos iran a la izquierda*/
+    float: left;
+    margin-top: 200px;
+    margin-left: 20px;
+}
+
+ 
+
+article footer {  /*si quedemos el footer de un article*/
+    text-align: right;
+}
+
+.pie {
+    /* para los pies de pagina hay un estilo general
+    https://developer.mozilla.org/en-US/docs/Web/CSS/clear 
+    lo que hace el clear, si ponemos none no pasa nada, solo se acopla al texto, si ponemos left se inclina hacia la izquierda, si ponemos both 
+    este siempre se pone hacia abajo, este es el que usamos siempre */
+    clear: both;
+    
 }
