@@ -37,7 +37,9 @@ function division(num1, num2) {
 }
 
 function eliminarElemento() {
-    document.getElementById('idEliminar').remove;
+    document.getElementById('idEliminar').remove();
+    console.log(document.getElementById('idEliminar'))
+    console.log('Test')
 
 }
 
