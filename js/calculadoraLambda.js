@@ -1,8 +1,8 @@
 /*en js existe solo un concepto de lamba, y se los declara asi
 siemrpe para declarar lambdas debemos valoresnos de una constante y el nombre de la lambda, luego igual y los argumentos
- de entrada y salida
- 
- si solo tenemos una expresion como en el caso de sumar que solo es num1 + num2 se puede poner en el mismo lambda*/
+de entrada y salida
+
+si solo tenemos una expresion como en el caso de sumar que solo es num1 + num2 se puede poner en el mismo lambda*/
 
 const sumar = (num1, num2) => num1 + num2;
 
