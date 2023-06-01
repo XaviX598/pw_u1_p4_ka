@@ -1,0 +1,150 @@
+
+/* body {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(5, 5, 7, 0.822);
+}
+
+.valoresBotones{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 40px;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+
+.botonCero {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 40px;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+    
+}
+
+.operacionesBotones{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 40px;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+
+.cabecera{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    color: aqua;
+
+}
+
+.igual {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 40px;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+.respuesta {
+    background-color: rgb(57, 38, 167);
+    color: aliceblue;
+    text-align: center ;
+    grid-template-columns: max-content ;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    
+} */
+
+.container {
+    display: flex; /*a los elementos internos se les puede manipular de una manera mas sencilla*/
+    justify-content: center; /*centrar elementos */
+    align-items: center; /*para alinear al centros */
+    
+}
+
+.calculadora {
+    display: grid; /*para ver los elementos en columna*/ 
+    grid-template-columns: repeat(4, 75px); /*cantidad de columnas y con un ancho de 75px*/
+    /*grid-template-rows: ;*/
+    background-color: rgb(100, 183, 118);
+    padding: 20px;
+    border-radius: 35px;
+    box-shadow: 10px 10px 20px 5px black; /*para darle sombreado (horizontalt, verticalt, difuminadot u opacidadt, tamaniot*/
+}
+
+.ceroDosColumnas{
+    grid-column: span 2; /*que ocupa dos espacios*/
+    margin: 4px ;
+    border-radius: 7px;
+    background-color: aqua;
+    border: 4px solid ;
+}
+
+.pantalla{
+    grid-column: span 4;
+    color: aliceblue;
+    border-style: solid ;
+    height: 20px;
+    width: 100px;
+    border: 4px solid aqua;
+    text-align: center;
+    
+}
+
+.botones{
+    margin: 4px ;
+    
+    border-radius: 7px;
+    border: 4px solid ;
+    background-color: aqua;
+
+}
+
+.botones:hover{
+    background-color: yellow;
+}
+
+.ceroDosColumnas:hover{
+    background-color: yellow;
+}
+
+.cabecera{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(34, 17, 187);
+
+}
+
+    
