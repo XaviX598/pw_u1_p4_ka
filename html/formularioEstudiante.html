@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estudiante.css">
+    <title>Taller12_1_junio_formularioEstudiabte</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="formEstudiante">
+            <header>
+                <h1>Estudiante</h1>
+            </header>
+            <nav></nav>
+            <section>
+                <!--EN EL ACTION VA EL URL DEL API Y EN EL METHOD EL METODO EN ESTE CASO INSERTAMOS INFO CON POST (en mayus o en min) 
+                    recomendacion mayus-->
+                <form class="form" action="https://miapi.com/estudiante" method="POST">
+                    <!--dentro van los elementos que tendra el formulario-->
+                    <h2>Nuevo Estudiante</h2>
+                    <!--forma 1 de declarar formulario-->
+                    <!--<label for="">Nombre</label>que pedimos, la etiqueta-->
+                    <!--<input type="text"> entrada de texto-->
+                    <!--forma 2 de declarar formulario -->
+                    <!--nombre del label y dentro del contenido declaramos el input de esta forma no salen las etiquetas per 
+                    se arregla en css-->
+                    <!--placeholder da una marca de agua en el input-->
+                    <p type="Nombre"><input type="text" placeholder="Ingrese su nombre"></p>
+                    <p type="Apellido"><input type="text" placeholder="Ingrese su apellido"></p>
+                    <p type="Genero"><input type="text" placeholder="Ingrese su genero"></p>
+                    <p type="Ciudad"><input type="text" placeholder="Ingrese su ciudad"></p>
+                    <button>Guardar</button>
+                </form>
+            </section>
+            <footer></footer>
+        </div>
+    </div>
+</body>
+
+</html>

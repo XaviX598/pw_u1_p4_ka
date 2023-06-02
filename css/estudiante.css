@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    justify-content: center; /*centrar elementos */
+    align-items: center; /*para alinear al centros */
+    text-align: center;
+}
+
+.form {
+    height: 370px;
+    width: 340px;
+    background: #bc7bb7;
+    border-radius: 15px;
+    padding: 20px 30px ; /*arriba y para los lados*/
+    box-shadow: -5px 10px 40px 10px; /*horizontal, vertical, difuminado, tamanio*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*letra*/
+}
+
+body {
+    background-color:  #be34b2 ;
+}
+
+h2{
+    margin: 10px 0px; /* arriba y a los lados*/
+    padding-bottom: 10px;
+    width: 180px;
+    color: #313192;
+    /*para subrayr se puede poner un borde abajo*/
+    border-bottom: solid 3px #313192; /*tipo ancho y color*/
+    
+
+}
+
+p:before{ /*para hacer aparecer las etiquetas*/
+    content: attr(type);
+    display: block;
+    margin: 5px 2px;
+    font-size: 14px;
+    color: #0c0c3d;
+}
+
+input {
+    width: 100%; /*porcentaje que ocupe dentro del formulario*/
+    border: none; /*que no tenga borde*/
+    border-bottom: 2px solid #313192;
+    background: none;
+}
+
+
+::placeholder{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #3a3a7d;
+}
+button{
+    color: #f0e2ef;
+    background: #7070a8;
+    border-radius: 20px;
+    margin-left: 280px;
+    margin-top: 11px;
+}
+
+button:hover{
+    color: #0c0c3d;
+    background-color: #be34b2;
+    box-shadow: 0px 0px 10px -2px;
+}
+/* al darle click dale un cuadrado par cambiar eso se hace asi*/
+input:focus {
+border-bottom: 2px solid #be34b2;
+outline: none;
+}
